@@ -77,26 +77,26 @@ Python 3.11
 ### Python Packages
 
 * `pathlib`
-    * Module used for creating paths from input and output arguments
+    * Used for creating paths from input and output arguments
 * `argparse`
-    * Module used for parsing the command line arguments containing the 
+    * Used for parsing the command line arguments containing the 
       input and output text files
 * `sys`
-  * Module used to handle errors and printing them to the console
+  * Used to handle errors and printing them to the console
 * `proj1.modify_strings`
-  * Developer created module used for string manipulation 
+  * Developer created script that contains functions for string manipulation 
 * `proj1.stack`
-  * Developer created object of stack to represent the stack data structure
+  * Developer created class of Stack to represent the stack data structure
 * `proj1.get_count`
-  * Developer created module to get the counts for number of operators and number of 
+  * Developer created script that contains a function to get the number of operators and number of 
     operands of given string
 * `typing`
-  * Module used to specifcy type hints of TextIO for 
+  * Used to specifcy type hints of TextIO for 
     conversion function
 * `time`
-  * Module used to calculate run time metrics for later analysis
+  * Used to calculate run time metrics for later analysis
 * `proj1.runtime_metric`
-  * Developer created object used to determine size of an input and duration 
+  * Provided sample code for class of RuntimeMetric to contain size of an input and duration 
     of the solution
 
 ### Project Layout

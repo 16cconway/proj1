@@ -85,13 +85,13 @@ Python 3.11
 * `proj1.stack`
   * Developer created object of stack to represent the stack data structure
 * `proj1.get_count`
-  * Developer created module to get the counts for number of operators and 
-    operand of given string
+  * Developer created module to get the counts for number of operators and number of 
+    operands of given string
 * `typing`
   * Module used to specifcy type hints of TextIO for 
     conversion function
 * `time`
-  * Module used for run time metrics for later analysis
+  * Module used to calculate run time metrics for later analysis
 * `proj1.runtime_metric`
   * Developer created object used to determine size of an input and duration 
     of the solution

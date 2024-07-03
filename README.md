@@ -71,7 +71,7 @@ text file. If the file does not exist, the program will create it.
 ## Python Packaging
 
 ### Python IDE 
-I used PyCharm Community Edition for development of this porject
+I used PyCharm Community Edition for development of this project
 
 ### Python Version
 Python 3.11

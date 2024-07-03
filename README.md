@@ -93,7 +93,7 @@ Python 3.11
   * Developer created script that contains a function to get the number of operators and number of 
     operands of given string
 * `typing`
-  * Used to specifcy type hints of TextIO for 
+  * Used to specify type hints of TextIO for 
     conversion function
 * `time`
   * Used to calculate run time metrics for later analysis

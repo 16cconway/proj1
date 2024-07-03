@@ -55,8 +55,6 @@ text file. If the file does not exist, the program will create it.
 ### Output for Valid Inputs
 * Inputted Prefix Expression
 * Equivalent Postfix Expression
-* Input size
-* Run Time for that Input
 
 ### Output for Invalid Inputs
 * Inputted Prefix Expression
@@ -65,6 +63,10 @@ text file. If the file does not exist, the program will create it.
 * Number of Operands
 
 > **Note:** Errors are also printed to the console
+
+### Ending Output
+* Input Size (number of characters in entire input file)
+* Runtime 
 
 ## Python Packaging
 
@@ -98,6 +100,9 @@ Python 3.11
 * `proj1.runtime_metric`
   * Provided sample code for class of RuntimeMetric to contain size of an input and duration 
     of the solution
+* `proj1.get_input_size`
+  * Developer created script used for getting the size of the input for time 
+    complexity analysis
 
 ### Project Layout
 

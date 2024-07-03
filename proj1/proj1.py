@@ -5,6 +5,7 @@ from typing import TextIO
 from sys import stderr
 from time import time_ns
 from proj1.runtime_metric import RuntimeMetric
+from proj1.get_input_size import get_input_size
 
 
 def convert_prefix_to_postfix(input_file: TextIO, output_file: TextIO) -> None:
@@ -16,6 +17,9 @@ def convert_prefix_to_postfix(input_file: TextIO, output_file: TextIO) -> None:
     :param output_file: An opened text file set to write mode
     :return:
     """
+
+    # Start time to analyze computation time of input
+    start_time = time_ns()
 
     lines = input_file.readlines()
     stack1 = Stack()
@@ -39,9 +43,6 @@ def convert_prefix_to_postfix(input_file: TextIO, output_file: TextIO) -> None:
 
         # Empty stack if it isn't already
         stack1.empty()
-
-        # Start time to analyze time of each string conversion
-        start_time = time_ns()
 
         # Strip whitespace of string expression
         prefix_str = strip_string(original_prefix_str)
@@ -146,14 +147,12 @@ def convert_prefix_to_postfix(input_file: TextIO, output_file: TextIO) -> None:
 
         # If no errors occur, write the postfix expression to the output file
         elif not err_flag:
-            output_file.write("postfix: " + str(stack1.items[0])+"\n")
+            output_file.write("postfix: " + str(stack1.items[0])+"\n\n")
 
-            # End time for analyzing time of each conversion
-            end_time = time_ns()
+    # End time for analyzing time of each conversion
+    end_time = time_ns()
 
-            # Write the size and time for each string to the output file
-            metric = RuntimeMetric(len(original_prefix_str), end_time -
-                                   start_time)
-            output_file.write(f"Size: {metric.get_size()}\n"
-                              f"Run Time: {metric.get_runtime()}ns\n\n")
-
+    # Write the size and time for each string to the output file
+    metric = RuntimeMetric(get_input_size(lines), end_time - start_time)
+    output_file.write(f"Input Size: {metric.store_size()}\nRun Time:"
+                      f" {metric.get_runtime()}ns\n")

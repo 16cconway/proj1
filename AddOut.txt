@@ -1,0 +1,47 @@
+prefix:  ABABAB
+Input line 1: Not enough operators. The Number of Operators must equal the Number of Operands minus 1
+Number of Operators: 0 
+Number of Operands: 6
+
+prefix:  ABA+BAB
+Input line 2: Not enough operators. The Number of Operators must equal the Number of Operands minus 1
+Number of Operators: 1 
+Number of Operands: 6
+
+prefix:  ABA.BAB
+Input line 3: Invalid character: '.'. Only accepts alphabet letters and operators +, -, *, /, $, and ^
+
+prefix:  -+AABC-
+Input line 4: The Stack is empty and cannot pop(): encountered an operator before encountering two operands. The Number of Operators must equal the Number of Operands minus 1
+Number of Operators: 3 
+Number of Operands: 4
+
+prefix:  ++A-*$BCD/+EF*GHI
+postfix: ABC$D*EF+GH*/-+I+
+
+prefix:  +-$ABC*D**EFG
+postfix: AB$C-DEF*G**+
+
+prefix:   + - $ A B C * D * * E F G
+postfix: AB$C-DEF*G**+
+
+prefix:   + - $ A B  C * D * * E F G
+postfix: AB$C-DEF*G**+
+
+prefix:   +++--/
+Input line 9: The Stack is empty and cannot pop(): encountered an operator before encountering two operands. The Number of Operators must equal the Number of Operands minus 1
+Number of Operators: 6 
+Number of Operands: 0
+
+prefix:   -+AAB-C
+Input line 10: The Stack is empty and cannot pop(): too many operators or encountered an operator before encountering two operands. The Number of Operators must equal the Number of Operands minus 1
+Number of Operators: 3 
+Number of Operands: 4
+
+prefix:   +++0--/
+Input line 11: The Stack is empty and cannot pop(): encountered an operator before encountering two operands. The Number of Operators must equal the Number of Operands minus 1
+Number of Operators: 6 
+Number of Operands: 0
+
+Input Size: 144
+Run Time: 1452000ns

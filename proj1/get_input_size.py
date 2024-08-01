@@ -8,7 +8,7 @@ def get_input_size(lines: list) -> int:
 
     # iterate over all characters within each line of lines and add 1 to count
     for string in lines:
-        for char in string:
+        for _ in string:
             count += 1
 
     return count

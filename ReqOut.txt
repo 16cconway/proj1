@@ -1,0 +1,41 @@
+prefix:  -+ABC
+postfix: AB+C-
+
+prefix:  -A+BC
+postfix: ABC+-
+
+prefix:  $+-ABC+D-EF
+postfix: AB-C+DEF-+$
+
+prefix:  -*A$B+C-DE*EF
+postfix: ABCDE-+$*EF*-
+
+prefix:  **A+BC+C-BA
+postfix: ABC+*CBA-+*
+
+prefix:  /A+BC +C*BA  
+Input line 6: Not enough operators. The Number of Operators must equal the Number of Operands minus 1
+Number of Operators: 4 
+Number of Operands: 6
+
+prefix:  *-*-ABC+BA  
+Input line 7: The Stack is empty and cannot pop(): too many operators or encountered an operator before encountering two operands. The Number of Operators must equal the Number of Operands minus 1
+Number of Operators: 5 
+Number of Operands: 5
+
+prefix:  /+/A-BC-BA  
+Input line 8: The Stack is empty and cannot pop(): too many operators or encountered an operator before encountering two operands. The Number of Operators must equal the Number of Operands minus 1
+Number of Operators: 5 
+Number of Operands: 5
+
+prefix:  *$A+BC+C-BA 
+postfix: ABC+$CBA-+*
+
+prefix:  //A+B0-C+BA
+Input line 10: Invalid character: '0'. Only accepts alphabet letters and operators +, -, *, /, $, and ^
+
+prefix:  *$A^BC+C-BA					
+postfix: ABC^$CBA-+*
+
+Input Size: 159
+Run Time: 1673000ns
